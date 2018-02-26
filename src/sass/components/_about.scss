@@ -1,0 +1,48 @@
+.overlap-section {
+  width:70vw;
+  margin:0 auto;
+  background-color:red;
+  margin-top:-5rem;
+  z-index:10;
+  position:relative;
+  .reservation {
+    &__text {
+      flex:1;
+      background-color:#fff;
+      padding:3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align:center;
+    }
+    &__pic {
+      flex:3;
+      background-color:blue;
+      padding:3rem;
+    }
+  }
+}
+
+.about {
+  &__text {
+    flex:3;
+    background-color:#fff;
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+  }
+  &__pic {
+    flex:1;
+    background-color:blue;
+    padding:3rem;
+  }
+}
+
+.about, .reservation {
+  display:flex;
+  height:25rem;
+}

@@ -1,7 +1,7 @@
 .hero {
   height: 100vh;
   background-color: #f9f9f9;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/hero.jpeg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/hero.jpeg") center center no-repeat;
   background-size: cover;
   position: relative; }
   .hero__heading {
@@ -35,3 +35,43 @@ body {
 body {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5; }
+
+.overlap-section {
+  width: 70vw;
+  margin: 0 auto;
+  background-color: red;
+  margin-top: -5rem;
+  z-index: 10;
+  position: relative; }
+  .overlap-section .reservation__text {
+    flex: 1;
+    background-color: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .overlap-section .reservation__pic {
+    flex: 3;
+    background-color: blue;
+    padding: 3rem; }
+
+.about__text {
+  flex: 3;
+  background-color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.about__pic {
+  flex: 1;
+  background-color: blue;
+  padding: 3rem; }
+
+.about, .reservation {
+  display: flex;
+  height: 25rem; }
