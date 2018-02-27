@@ -10,8 +10,8 @@
     center
     center no-repeat;
     background-size:cover;
-  position:relative;
-
+    position:relative;
+    z-index:5;
   &__heading {
     position:absolute;
     left:50%;
@@ -22,7 +22,7 @@
 
     &--primary {
       font-size:10rem;
-      font-family: $heading;
+      font-family: $heading-text;
       font-weight:700;
     }
     &--secondary {

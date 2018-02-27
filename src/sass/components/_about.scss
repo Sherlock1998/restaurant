@@ -1,11 +1,11 @@
 .overlap-section {
-  width:70vw;
-  margin:0 auto;
-  background-color:red;
-  margin-top:-5rem;
-  z-index:10;
   position:relative;
+  background-color:#F6F4F1;
+  margin-top:-5rem;
+  
   .reservation {
+    z-index:5;
+    position:relative;
     &__text {
       flex:1;
       background-color:#fff;
@@ -15,6 +15,30 @@
       align-items: center;
       justify-content: center;
       text-align:center;
+      & > * {
+        margin:1rem 0;
+      }
+      &--heading {
+        font-family: $heading-text;
+        font-size:$heading-size-about;
+        color:$heading-color;
+      }
+      &--paragraph {
+        font-size:$body-size;
+        color:$body-color;
+        font-family:$body-text;
+      }
+      &--button {
+        color: $button-color;
+        border:2px solid $button-color;
+        background-color:transparent;
+        font-weight:$button-weight;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding:1.2rem 3.6rem;
+        text-transform:uppercase;
+      }
     }
     &__pic {
       flex:3;
@@ -34,6 +58,18 @@
     align-items: center;
     justify-content: center;
     text-align:center;
+    & > * {
+      margin:1rem 0;
+    }
+    &--heading {
+      font-family: $heading-text;
+      font-size:$heading-size-about;
+      color:$heading-color;
+    }
+    &--paragraph {
+      font-size:$body-size;
+      color:$body-color;
+    }
   }
   &__pic {
     flex:1;
@@ -42,7 +78,10 @@
   }
 }
 
+
 .about, .reservation {
   display:flex;
-  height:25rem;
+  width:70vw;
+  margin:0 auto;
+  height:30rem;
 }
