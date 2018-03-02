@@ -1,0 +1,17 @@
+.specialties {
+  background:red;
+  height:75vh;
+  position:relative;
+  margin-top:-5rem;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  .heading-bold {
+    font-size:4rem;
+    // letter-spacing:.5rem;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing: 1.5;
+    color:white;
+  }
+}

@@ -17,9 +17,10 @@
       font-family: "Lora", serif;
       font-weight: 700; }
     .hero__heading--secondary {
-      font-size: 2rem;
+      font-size: 3rem;
+      letter-spacing: .7rem;
       text-transform: uppercase;
-      font-weight: 300;
+      font-weight: 900;
       letter-spacing: 1.5; }
 
 *, *::before, *::after {
@@ -72,38 +73,56 @@ body {
         text-decoration: none;
         display: inline-block;
         padding: 1.2rem 3.6rem;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        cursor: pointer; }
     .overlap-section .reservation__pic {
       flex: 3;
       background-color: blue;
       padding: 3rem; }
 
-.about__text {
-  flex: 3;
-  background-color: #fff;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-  .about__text > * {
-    margin: 1rem 0; }
-  .about__text--heading {
-    font-family: "Lora", serif;
-    font-size: 2.5rem;
-    color: #3A3A3A; }
-  .about__text--paragraph {
-    font-size: 1.6rem;
-    color: #6f6f6f; }
-
-.about__pic {
-  flex: 1;
-  background-color: blue;
-  padding: 3rem; }
+.about {
+  z-index: 5;
+  position: relative; }
+  .about__text {
+    flex: 3;
+    background-color: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .about__text > * {
+      margin: 1rem 0; }
+    .about__text--heading {
+      font-family: "Lora", serif;
+      font-size: 2.5rem;
+      color: #3A3A3A; }
+    .about__text--paragraph {
+      font-size: 1.6rem;
+      color: #6f6f6f; }
+  .about__pic {
+    flex: 1;
+    background-color: blue;
+    padding: 3rem; }
 
 .about, .reservation {
   display: flex;
   width: 70vw;
   margin: 0 auto;
   height: 30rem; }
+
+.specialties {
+  background: red;
+  height: 75vh;
+  position: relative;
+  margin-top: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .specialties .heading-bold {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5;
+    color: white; }
