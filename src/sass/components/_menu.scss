@@ -1,0 +1,41 @@
+.menu-section {
+  margin-top:-5rem;
+  position:relative;
+  background-color:#F6F4F1;
+}
+.menu__row--1, .menu__row--2 {
+  display:flex;
+  width:70vw;
+  margin:0 auto;
+  height:30rem;
+  z-index:5;
+  position:relative;
+  background-color:white;
+}
+
+div[class^="menu__row"] {
+  & > * {
+    flex:1;
+  }
+  div[class^="menu__text"] {
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:3rem;
+    & > * {
+      margin:1rem 0;
+    }
+    .food--heading {
+      font-size:2rem;
+    }
+    .menu__price {
+      font-size:1.6rem;
+    }
+  }
+  div[class^="menu__pic"] {
+    background-color:blue;
+    padding:3rem;
+  }
+}

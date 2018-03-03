@@ -1,4 +1,24 @@
-body {
-  font-family: 'Josefin Sans', sans-serif;
-  line-height:1.5;
+.body__text {
+  font-family:$body-text;
+  font-size:$body-size;
+  color:$body-color;
+}
+
+.heading--secondary {
+  font-weight:900;
+  font-family: $body-text;
+}
+
+.food--heading {
+  font-weight:900;
+  color:#3C3C3C;
+  font-family:$body-text;
+  text-transform:uppercase;
+}
+
+.price {
+  color:#BBA07F;
+  text-transform:uppercase;
+  font-family:$body-text;
+  font-weight:900
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Hero from './components/hero';
 import About from './components/about';
-import Specialties from './components/specialties';
+import Divider from './components/divider';
 import Menus from './components/menus';
 
 class App extends Component {
@@ -10,8 +10,9 @@ class App extends Component {
       <div>
         <Hero />
         <About />
-        <Specialties />
+        <Divider text={'our specialties'}/>
         <Menus />
+        <Divider />
       </div>
     );
   }

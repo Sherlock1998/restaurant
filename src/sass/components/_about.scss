@@ -2,7 +2,6 @@
   position:relative;
   background-color:#F6F4F1;
   margin-top:-5rem;
-
   .reservation {
     z-index:5;
     position:relative;
@@ -22,11 +21,6 @@
         font-family: $heading-text;
         font-size:$heading-size-about;
         color:$heading-color;
-      }
-      &--paragraph {
-        font-size:$body-size;
-        color:$body-color;
-        font-family:$body-text;
       }
       &--button {
         color: $button-color;
@@ -68,10 +62,6 @@
       font-family: $heading-text;
       font-size:$heading-size-about;
       color:$heading-color;
-    }
-    &--paragraph {
-      font-size:$body-size;
-      color:$body-color;
     }
   }
   &__pic {
