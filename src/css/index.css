@@ -39,6 +39,10 @@ body {
   font-size: 1.6rem;
   color: #6f6f6f; }
 
+.heading--primary {
+  font-family: "Lora", serif;
+  color: #3c3c3c; }
+
 .heading--secondary {
   font-weight: 900;
   font-family: "Josefin Sans", sans-serif; }
@@ -74,9 +78,7 @@ body {
       .overlap-section .reservation__text > * {
         margin: 1rem 0; }
       .overlap-section .reservation__text--heading {
-        font-family: "Lora", serif;
-        font-size: 2.5rem;
-        color: #3A3A3A; }
+        font-size: 2.5rem; }
       .overlap-section .reservation__text--button {
         color: #B0926C;
         border: 2px solid #B0926C;
@@ -108,9 +110,7 @@ body {
     .about__text > * {
       margin: 1rem 0; }
     .about__text--heading {
-      font-family: "Lora", serif;
-      font-size: 2.5rem;
-      color: #3A3A3A; }
+      font-size: 2.5rem; }
   .about__pic {
     flex: 1;
     background-color: blue;
@@ -171,3 +171,48 @@ div[class^="menu__row"] div[class^="menu__text"] {
 div[class^="menu__row"] div[class^="menu__pic"] {
   background-color: blue;
   padding: 3rem; }
+
+.menus-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0; }
+  .menus-list .menus__list ul {
+    display: flex;
+    flex-direction: column; }
+    .menus-list .menus__list ul li {
+      list-style: none;
+      display: flex;
+      align-items: flex-end;
+      margin: 2rem; }
+      .menus-list .menus__list ul li .food--text .food--heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+      .menus-list .menus__list ul li .food--price {
+        margin-left: 2rem;
+        align-self: center; }
+        .menus-list .menus__list ul li .food--price .price--cursive {
+          font-size: 2.5rem;
+          font-style: italic; }
+  .menus-list .menus__list .entree {
+    display: flex;
+    flex-direction: row; }
+    .menus-list .menus__list .entree .col-left {
+      width: 50rem;
+      padding: 1rem; }
+    .menus-list .menus__list .entree .col-right {
+      width: 50rem;
+      padding: 1rem; }
+
+.heading--primary {
+  font-size: 5rem; }
+
+.heading--faded {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #D3D3D3;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 7rem 0 5rem 0; }

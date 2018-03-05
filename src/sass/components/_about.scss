@@ -18,9 +18,7 @@
         margin:1rem 0;
       }
       &--heading {
-        font-family: $heading-text;
-        font-size:$heading-size-about;
-        color:$heading-color;
+        font-size:2.5rem;
       }
       &--button {
         color: $button-color;
@@ -59,9 +57,7 @@
       margin:1rem 0;
     }
     &--heading {
-      font-family: $heading-text;
-      font-size:$heading-size-about;
-      color:$heading-color;
+      font-size:2.5rem;
     }
   }
   &__pic {
