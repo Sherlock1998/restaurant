@@ -56,3 +56,22 @@
   text-transform: uppercase;
   margin:7rem 0 5rem 0;
 }
+
+@media only screen and (max-width: 500px) {
+    .entree {
+      display:block !important;
+    }
+    .col-left, .col-right {
+      width:auto !important;
+    }
+    .food--price {
+      margin-left:0rem !important;
+    }
+    ul li {
+      margin:0 !important;
+      padding:1rem .5rem;
+    }
+    // .body__text {
+    //   width:50px;
+    // }
+}

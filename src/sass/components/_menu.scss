@@ -35,7 +35,21 @@ div[class^="menu__row"] {
     }
   }
   div[class^="menu__pic"] {
-    background-color:blue;
-    padding:3rem;
+
   }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu-section {
+      margin-top:0;
+    }
+
+    div[class^="menu__row"] {
+      display:block;
+      width:auto;
+      height:auto;
+    }
+    div[class^="menu__pic"] {
+      background-size:cover;
+    }
 }

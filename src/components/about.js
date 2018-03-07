@@ -11,7 +11,7 @@ export default class About extends Component {
               <p className="body__text">Contact us now to book a table. Reservations must be made on the same day</p>
               <button className="reservation__text--button">book a table</button>
             </div>
-            <div className="col-8-md reservation__pic"></div>
+            <div className="col-8-md col-12-xs reservation__pic"></div>
             </div>
           <div className="about">
           <div className="col-4-md  col-12-xs about__pic"></div>
