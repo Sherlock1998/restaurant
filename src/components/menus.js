@@ -15,7 +15,7 @@ export default class Menus extends Component {
               <p className="body__text">lorem ipsum dolor sit amet consectetur adispcing elit, sed do eiusmod</p>
               <span className="menu__price price">from $15.40</span>
             </div>
-            <div className="menu__pic--1"><img src={baricole} alt="baricoles" /></div>
+            <div className="menu__pic--1"><img src={lasagna} alt="lasagna" /></div>
             <div className="menu__text--2">
               <span className="food--heading">eggplant parmigiana</span>
               <p className="body__text">lorem ipsum dolor sit amet consectetur adispcing elit, sed do eiusmod</p>
@@ -24,7 +24,7 @@ export default class Menus extends Component {
             <div className="menu__pic--2"><img src={eggplant} alt="eggplant" /></div>
           </div>
           <div className="menu__row--2">
-            <div className="menu__pic--3"><img src={lasagna} alt="lasagna" /></div>
+            <div className="menu__pic--3"><img src={baricole} alt="baricole" /></div>
             <div className="menu__text--3">
               <span className="food--heading">baricole  </span>
               <p className="body__text">lorem ipsum dolor sit amet consectetur adispcing elit, sed do eiusmod</p>

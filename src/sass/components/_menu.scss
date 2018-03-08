@@ -1,22 +1,16 @@
 .menu-section {
-  margin-top:-5rem;
   position:relative;
   background-color:#F6F4F1;
 }
 .menu__row--1, .menu__row--2 {
   display:flex;
-  width:70vw;
-  margin:0 auto;
-  height:30rem;
+  justify-content: center;
   z-index:5;
   position:relative;
   background-color:white;
 }
 
 div[class^="menu__row"] {
-  & > * {
-    flex:1;
-  }
   div[class^="menu__text"] {
     text-align:center;
     display:flex;
@@ -24,6 +18,9 @@ div[class^="menu__row"] {
     justify-content: center;
     align-items: center;
     padding:3rem;
+    background-color:white;
+    width:300px;
+    height:300px;
     & > * {
       margin:1rem 0;
     }
@@ -34,9 +31,13 @@ div[class^="menu__row"] {
       font-size:1.6rem;
     }
   }
-  div[class^="menu__pic"] {
+}
 
-  }
+.menu__row--1 > * {
+  margin-top:-50px;
+}
+.menu__row--2 > * {
+  margin-bottom:-50px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -48,8 +49,21 @@ div[class^="menu__row"] {
       display:block;
       width:auto;
       height:auto;
+      & > * {
+        margin:0;
+      }
+      div[class^="menu__text"] {
+        width: 100%;
+        padding:5rem 0;
+      }
+      div[class^="menu__pic"] {
+        img {
+          width:100%;
+        }
+      }
     }
-    div[class^="menu__pic"] {
-      background-size:cover;
+    .menu__row--1 {
+      display:flex !important;
+      flex-direction:column-reverse;
     }
 }
