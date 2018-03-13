@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
-import Hero from './components/hero';
-import About from './components/about';
-import Divider from './components/divider';
-import Menus from './components/menus';
-import MenusList from './components/menuslist';
-import ContactForm from './components/contact_form'
+import Homepage from './homepage';
+import Bookings from './bookings';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <ContactForm />
-        <Hero />
-        <About />
-        <Divider text={'our specialties'}/>
-        <Menus />
-        <Divider />
-        <MenusList />
-      </div>
+      <Router>
+        <div>
+        <Route exact path="/" component={Homepage} />
+          <Route path="/booking" component={Bookings} />
+        </div>
+      </Router>
     );
   }
 }
