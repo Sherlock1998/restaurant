@@ -44,6 +44,10 @@ html {
 body {
   box-sizing: border-box; }
 
+.modal__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem; }
+
 .body__text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.6rem;
@@ -53,7 +57,7 @@ body {
   font-family: "Lora", serif;
   color: #3c3c3c; }
 
-.heading--secondary {
+.heading--secondary, .modal__heading {
   font-weight: 900;
   font-family: "Josefin Sans", sans-serif; }
 
@@ -143,6 +147,13 @@ body {
       width: 100%; }
     .overlap-section .reservation__pic {
       display: none !important; } }
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: red;
+  position: fixed;
+  z-index: 1000; }
 
 .divider {
   background: url("../img/divider-1.jpg") center center;

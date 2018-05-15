@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+
 import baricole from '../img/baricole.jpg';
 import eggplant from '../img/eggplant.jpg';
 import lasagna from '../img/lasagna.jpg';

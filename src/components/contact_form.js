@@ -1,58 +1,47 @@
-import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import React from 'react';
+import { Field, reduxForm } from 'redux-form';
 
 const ContactForm = props => {
-  const { handleSubmit, pristine, submitting } = props
+  const { handleSubmit, pristine, submitting } = props;
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <label>First Name</label>
-        <div>
-          <Field
-            name="firstName"
-            component="input"
-            type="text"
-            placeholder="First Name"
-          />
-        </div>
+      <div className="inputs">
+        <Field
+          className="input field"
+          name="firstName"
+          component="input"
+          type="text"
+          placeholder="First Name"
+        />
+        <Field
+          className="input field"
+          name="contact"
+          component="input"
+          type="tel"
+          placeholder="Contact Number"
+        />
+        <Field
+          className="input field"
+          name="seats"
+          component="input"
+          type="number"
+          placeholder="No. of Seats"
+        />
       </div>
-      <div>
-        <label>Contact Number</label>
-        <div>
-          <Field
-            name="contact"
-            component="input"
-            type="tel"
-            placeholder="Contact Number"
-          />
-        </div>
-      </div>
-      <div>
-        <label>No. of Seats</label>
-        <div>
-          <Field
-            name="seats"
-            component="input"
-            type="number"
-            placeholder="No. of Seats"
-          />
-        </div>
-      </div>
-      <div>
-        <label>Notes</label>
-        <div>
-          <Field name="notes" component="textarea" />
-        </div>
-      </div>
-      <div>
-        <button type="submit" disabled={pristine || submitting}>
-          Submit
-        </button>
-      </div>
+      <Field
+        name="notes"
+        component="textarea"
+        type="text"
+        placeholder="Notes"
+        className="field textarea"
+      />
+      <button type="submit" disabled={pristine || submitting}>
+        Submit
+      </button>
     </form>
-  )
-}
+  );
+};
 
 export default reduxForm({
-  form: 'simple' // a unique identifier for this form
-})(ContactForm)
+  form: 'contactForm' // a unique identifier for this form
+})(ContactForm);
